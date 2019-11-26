@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Table</title>
+    <style>
+        * {
+            letter-spacing: 1px;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .assignments {
+            background-color: rgba(125, 125, 125, 0.2);
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin: 25px 0;
+        }
+
+        .assignment-block {
+            margin-bottom: 25px;
+            border-bottom: 1px solid rgba(172, 159, 159, 0.1);
+        }
+
+        .assignment-title {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+        }
+
+        .tip-box {
+            background-color: rgba(36, 165, 68, 0.5);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .tip-box--red {
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+
+        .tip-box--orange {
+            background-color: rgba(255, 115, 0, 0.5);
+        }
+
+        .answer {
+            background-color: rgba(23, 207, 69, 0.5);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Javascript</h1>
+            <img src="./img/techgrounds.svg" alt="techgrounds-placeholder" style="width: 200px;">
+        </div>
+        <p>
+            Javascript is een functional programming language. Met javascript kun je zowel client-side als server-side
+            rendering doen.
+            Client-side houdt in dat javascript op jouw browser uitgevoerd wordt en Server-side houdt in dat het op een
+            extern computer uitgevoerd wordt.
+            Lees je heel goed in wat je met javascript kunt doen: <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">hier</a>
+        </p>
+
+        <div>
+            <h2>Instructies</h2>
+            <p>
+                Per opdracht is het beste om een aparte html bestand van te maken. bv met opdracht1, dan maak je een
+                opdracht1.html bestand aan.
+                In dat bestand kun je internal javascript gebruiken om jouw antwoord te geven.
+            </p>
+        </div>
+
+        <div class="assignments">
+            <div class="assignment-block">
+                <p>
+                    <span class="assignment-title">Opdracht 1</span>: In javascript heb je verschillende soorten data
+                    types:
+                </p>
+
+                <ul>
+                    <li>number</li>
+                    <li>String</li>
+                    <li>boolean</li>
+                    <li>null</li>
+                    <li>undefined</li>
+                    <li>Symbol</li>
+                    <li>Object</li>
+                </ul>
+
+                <p>Geef voor elke data type een definitie.</p>
+            </div>
+        </div>
+
+        <div class="assignments">
+            <div class="assignment-block">
+                <p>
+                    <span class="assignment-title">Opdracht 2</span>: Console.log() wordt heel vaak gebruikt voor
+                    debugging. Lees je in hoe console.log() werkt. Maak het volgende:
+                </p>
+
+                <ul>
+                    <li>Maak een variabel "getal" aan met een waarde 10</li>
+                    <li>Print de waarde van "getal" m.b.v console.log()</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="assignments">
+            <div class="assignment-block">
+                <p>
+                    <span class="assignment-title">Opdracht 3</span>: Een waarde van een variabel zou je ook op een HTML
+                    pagina kunnen tonen. Hiervoor heb je de DOM (Document Object Model) API nodig. Lees je in over <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">DOM API</a>. Maak
+                    het volgende:
+                </p>
+
+                <ul>
+                    <li>Maak in je html bestand een span aan met id "name"</li>
+                    <li>Maak in je internal javascript een variabel "getal" aan met een waarde 10</li>
+                    <li>Gebruik vervolgens m.b.h de DOM API om de waarde van het "getal" te tonen op scherm.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="assignments">
+            <div class="assignment-block">
+                <p>
+                    <span class="assignment-title">Opdracht 4</span>: Getallen kun je bijelkaar optellen, aftrekken,
+                    delen en restdeling.
+                </p>
+
+                <ul>
+                    <li>Maak een variabel "getal1" aan met een waarde 10</li>
+                    <li>Maak een variabel "getal2" aan met een waarde 20</li>
+                    <li>
+                        Op het scherm wil ik het volgende zien:
+                        <ul>
+                            <li>getal1:10, getal2:20, operator:+, antwoord=30</li>
+                            <li>getal1:10, getal2:20, operator:-, antwoord=10</li>
+                            <li>getal1:10, getal2:20, operator:/, antwoord=2</li>
+                            <li>getal1:10, getal2:20, operator:%, antwoord=0</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="tip-box tip-box--red">LET OP: gebruik de waarde van "getal1" en "getal2" om bijelkaar op te
+                    tellen, af te trekken, te delen en restdeling te doen.</div>
+            </div>
+        </div>
+
+        <div class="assignments">
+            <div class="assignment-block">
+                <p>
+                    <span class="assignment-title">Opdracht 5</span>: Een variabel die een waarde undefined of null
+                    heeft kun je met
+                    console.log() zien. Belangrijk om dit te onthouden, want hiermee kun je goed debuggen en traceren
+                    waar de oorzaak is. Maak een variabel aan en ken <b>geen</b> waarde toe. log de waarde met
+                    console.log().
+                </p>
+            </div>
+        </div>
+
+        <div class="assignments">
+            <div class="assignment-block">
+                <p>
+                    <span class="assignment-title">Opdracht 6</span>: Met prompt() functie kun je aan de gebruiker
+                    vragen voor input. Zoek uit hoe prompt() functie werkt.
+                    Maak vervolgens het volgende:
+                </p>
+
+                <ul>
+                    <li>De waarde wat er uit prompt() komt in een variabel toekennen</li>
+                    <li>Toon de waarde van de variabel op het scherm d.m.v DOM API</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="assignments">
+            <div class="assignment-block">
+                <p>
+                    <span class="assignment-title">Opdracht 7</span>: Een tekst die je d.m.v javascript op het scherm
+                    toont wordt ook wel een String genoemd. In javascript heb je in een String object handige functies
+                    die je kunt gebruiken. Bijvoorbeeld. "abcdef".length geeft aan dat er 6 letters zijn. Maak het
+                    volgende:
+                </p>
+
+                <ul>
+                    <li>Maak een variabel "content" aan met de tekst "Lorem Ipsum is simply dummy text of the printing
+                        and
+                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum."</li>
+                    <li>Wat is de lengte van de waarde van de variabel content?</li>
+                    <li>String concatenation wordt vaak in de praktijk gebruikt. Zoek uit wat String concatenation is en
+                        pas dat toe</li>
+                    <li>Zoek uit hoe String.slice functie werkt en pas dat toe.</li>
+                    <li>Zorg dat de waarde van de variable content allemaal hoofdletters worden d.m.v een String functie
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="assignments">
+            <div class="assignment-block">
+                <p>
+                    <span class="assignment-title">Opdracht 8</span>: Objecten in javascript is een belangrijk concept
+                    dat heel vaak toegepast wordt. Het is namelijk een groepering van data. Maak een object car aan met
+                    de properties carModel, owner, licensePlate en brand. Toon het object ook op het scherm d.m.v DOM
+                    API.
+                </p>
+            </div>
+        </div>
+
+        <div class="assignments">
+            <div class="assignment-block">
+                <p>
+                    <span class="assignment-title">Opdracht 9</span>: Maak een String aan met "6 7 8". Men wilt dat het
+                    eerste getal van de String opgeteld wordt met het tweede getal van de String. Daarna is het antwoord
+                    van de optelling vermenigvuldigd met het derde getal. Hoe maak je dit?
+                </p>
+
+                <div class="tip-box tip-box--orange">Lees je in hoe Array werkt.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
